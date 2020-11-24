@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSX just js</title>
+    </head>
+
+    <style>
+        .container{
+            display: grid;
+            width: 800px;
+            height: 800px;
+            /*Escribe tu código aquí*/
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr); 
+            column-gap: 10px;
+            row-gap: 10px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .element {
+            background-color: lightpink;
+            /*Escribe tu código aquí*/
+            grid-area: 2 / 2;
+            border: 1px solid tomato;
+        }
+
+        .children {
+            border: 1px solid black;
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="element"></div>
+            <div class="children element1"></div>
+            <div class="children element2"></div>
+            <div class="children element3"></div>
+            <div class="children element4"></div>
+            <div class="children element5"></div>
+            <div class="children element6"></div>
+            <div class="children element7"></div>
+            <div class="children element8"></div>
+        </div>
+    </body>
+
+</html>
